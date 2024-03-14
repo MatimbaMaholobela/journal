@@ -4,5 +4,5 @@ from django.shortcuts import render
 def home(request):
     return render(request, "home.html")
 
-def journal(request):
+def journal_entry(request):
     return render(request,"journal.html")
