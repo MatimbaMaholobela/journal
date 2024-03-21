@@ -6,3 +6,6 @@ def home(request):
 
 def journal_entry(request):
     return render(request,"journal.html")
+    
+def login(request):
+    return render(request,"login.html")
