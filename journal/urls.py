@@ -19,8 +19,10 @@ from django.urls import path
 from dashboard import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path("",views.home,name="testPage"),
+    path('admin/', admin.site.urls),  #this is the admin page - later discussion
+
+    path("home",views.home,name="home"), 
     path("",views.login, name='login'),
+    path("verification/",views.login_cred, name="verification"),
     path("journal-entry/",views.journal_entry,name="journal-entry"),
 ]
