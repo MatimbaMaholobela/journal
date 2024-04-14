@@ -60,6 +60,7 @@
     <h2>Create Journal Entry</h2>
 
     <form id="journalForm" method="post">
+        {% csrf_token %}
         <label for="entryDate">Date:</label>
         <input type="date" id="entryDate" name="entryDate" required>
 
